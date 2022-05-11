@@ -39,48 +39,40 @@ OVERALL QUESTIONS
 
 ## Content
 -->
-
-<!-- EAJ TODO: Determine best structure for the document after working with the material. Ideas: Subheadings for each command; ol that contains an extended explanation; table that keeps command, description, and why to use it in rows -->
 # Managing code via the command line
-Git offers you many ways to manage your code both locally and remotely. Create branches to separate updates from production code, create patches, test ideas, and merge your changes into the codebase. The command line makes it easy to download, review, modify, and push changes between your local machine and a remote repository. <!-- New audiences may require a more in-depth intro, so we're leaving room for that here. -->
-
-<!-- Thought again; we could either link off to docs around local/remote branches and repositories if users need a refresh on this documentation or if they're newer to git and would require this information. -->
+Git offers you many ways to manage your code both locally and remotely. Create branches to separate updates from production code, create patches, test ideas, and merge your changes into the codebase. The command line makes it easy to download, review, modify, and push changes between your local machine and a remote repository.<!-- New audiences may require a more in-depth intro, so we're leaving room for that here. -->
 
 ## Git code management commands
 
-<!-- EAJ NOTE: Rearranging because the foundations build on each other -->
-Git includes three commands that you can use to review, update, and publish your changes to and from your local and remote repositories.
-- `fetch` - Retrieve code updates from a remote repository to place into your tracking branch.
-- `pull` - This command retrieves changes from a remote branch to place into your tracking branch before merging them into a local branch.
-- `push` - Send changes from a local branch to a remote repository.
+Git includes three commands that you can use to review, retrieve, and publish changes to and from your local and remote repositories:
+- `git fetch` - Retrieve code updates from a remote repository to place into your tracking branch.
+- `git pull` - This command retrieves changes from a remote branch to place into your tracking branch before merging them into a local branch.
+- `git push` - Send changes from a local branch to a remote repository.
 
 Find more information about these commands in the sections to follow.
 
-### Retrieving code updates (`fetch`)
-The `fetch` command first checks your local branch to determine whether an associated tracking branch exists remotely. If the tracking branch exists, `fetch` retrieves the changes and history from the tracking branch and pulls those changes into the <!-- tracking? remote? --> branch.
+### Retrieving updates from a branch (`git fetch`)
+The `git fetch` command retrieves the changes and history from a tracking branch to a locally-cached version of your remote repository. The `git fetch` command gives you an opportunity to review the changes that others have made to the tracking branch before merging them with the assets in your local branch. You can use `git fetch` to resolve conflicts before they are merged to your local branch.
 
-The `fetch` command does not update your local branch.
+The `git fetch` command does not update your local branch.
 
-<!-- EAJ QUESTIONS:
-    - The text that was originally here was confusing and a jumble of terminology. I am primarily trying to get straight what is updated and where. I understand that it downloads a branch from a remote repository (either the origin or an upstream branch), including the history of each asset. What I don't understand is when we say "retrieve" or "download," where is this downloaded to? It says my local branch isn't updated, but how can I review it locally if my local branch isn't updated? Is it updated on a remote repository?
-    - Does the user need to run fetch before they pull or push? How often?
--->
+To learn more about `git fetch`, review [Git's `git fetch` documentation](https://git-scm.com/docs/git-fetch).
 
-### Retrieving changes and merging them to your local repository (`pull`)
-The `pull` command fetches changes from the tracking branch or repository, then applies those changes to your local repository so that you have the latest copy.
+### Retrieving changes and merging them to your local repository (`git pull`)
+The `git pull` command fetches changes from a remote repository, then applies those changes to your local repository so that you work from the latest copy. The `git pull` command serves as the basis for which code comparisons are made before you push or merge local changes to a branch or repository.
 
-### Sending your changes to the remote repository (`push`)
-The `push` command checks for a tracking branch or remote repository, then updates the remote branch with your changes.
+You must run `git pull` often to ensure that your local assets match the remote repository.
 
-To ensure that you can successfully push updates to the remote branch, pull the latest version of your objects from the repository or branch.
+To learn more about `git pull`, review [GitHub's Git Pull guide](https://github.com/git-guides/git-pull).
 
-NOTE: Track the updates you make through pull requests and commits. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) and [commits](https://github.com/git-guides/git-commithttps://github.com/git-guides/git-commit) before you [merge](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch#merging-another-branch-into-your-project-branch) your updates into the main branch of the repository. 
-<!-- TODO: Add info around the fact that pull must be run to ensure that push commands work -->
+### Sending your changes to the remote repository (`git push`)
+The `git push` command updates the remote branch with your local changes. To ensure that you can successfully push updates to the remote branch, pull the latest version of your objects from the repository or branch.
 
-<!-- EAJ TODO:
-- Be sure to include information about each command's purpose, why it's important, what problems they are expected to solve.
-- Consider defining/explaining the various branches and repositories mentioned.
-- Verify that the correct branches and repositories are mentioned; a brief Google search for some terms makes what's below confusing.
-- Review GitHub and git documentation to make sure this information is complete.
-- Consider images?
--->
+NOTE: Track the updates you make through pull requests and commits. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) and [commits](https://github.com/git-guides/git-commithttps://github.com/git-guides/git-commit) before you [merge](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch#merging-another-branch-into-your-project-branch) your updates into the main branch of the repository.
+
+To learn more about `git push`, review [GitHub's Git Push guide](https://github.com/git-guides/git-push).
+
+## Additional resources
+- [Git Guide](https://github.com/git-guideshttps://github.com/git-guides)
+- [Git documentation](https://git-scm.com/doc)
+- 
