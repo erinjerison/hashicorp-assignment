@@ -1,4 +1,4 @@
-## Overview
+<!-- ## Overview
 
 This is a technical writing and editing project as part of your interview.
 
@@ -33,7 +33,13 @@ Once you're finished with your edits, send the PR link to the HashiCorp recruite
 
 ---
 
+OVERALL QUESTIONS
+1. 
+2. 
+3. 
+
 ## Content
+-->
 
 ### What is the difference between push, pull, and fetch?
 
