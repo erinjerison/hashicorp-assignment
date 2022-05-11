@@ -75,4 +75,3 @@ To learn more about `git push`, review [GitHub's Git Push guide](https://github.
 ## Additional resources
 - [Git Guide](https://github.com/git-guideshttps://github.com/git-guides)
 - [Git documentation](https://git-scm.com/doc)
-- 
