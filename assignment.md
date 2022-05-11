@@ -40,7 +40,7 @@ OVERALL QUESTIONS
 ## Content
 -->
 # Managing code via the command line
-Git offers you many ways to manage your code both locally and remotely. Create branches to separate updates from production code, create patches, test ideas, and merge your changes into the codebase. The command line makes it easy to download, review, modify, and push changes between your local machine and a remote repository.<!-- New audiences may require a more in-depth intro, so we're leaving room for that here. -->
+Git offers you many ways to manage your code both locally and remotely. Create branches to separate updates from production code, create patches, test ideas, and merge your changes into the codebase. The command line makes it easy to download, review, modify, and push changes between your local machine and a remote repository.
 
 ## Git code management commands
 
@@ -52,7 +52,7 @@ Git includes three commands that you can use to review, retrieve, and publish ch
 Find more information about these commands in the sections to follow.
 
 ### Retrieving updates from a branch (`git fetch`)
-The `git fetch` command retrieves the changes and history from a tracking branch to a locally-cached version of your remote repository. The `git fetch` command gives you an opportunity to review the changes that others have made to the tracking branch before merging them with the assets in your local branch. You can use `git fetch` to resolve conflicts before they are merged to your local branch.
+The `git fetch` command retrieves the changes and history from a tracking branch to a locally-cached version of your remote repository. The `git fetch` command gives you an opportunity to review the changes that others have made to the tracking branch before merging them with the assets in your local branch. You can use `git fetch` to resolve conflicts before you merge them to your local branch.
 
 The `git fetch` command does not update your local branch.
 
