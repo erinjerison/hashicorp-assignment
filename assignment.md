@@ -1,44 +1,3 @@
-<!-- ## Overview
-
-This is a technical writing and editing project as part of your interview.
-
-This project is designed to take between 1 - 2 hours.
-Please take the time to carefully review the [writing style guide](../styling-guide-snippet.md).
-
-## Instructions
-
-Create a new GitHub repository with the following content (See [content](#content)) as the first commit. Make a branch and open a PR to edit the text for clarity, and include any questions about the content's meaning, as if you were editing a colleague’s work. 
-
- **Any changes that you think will improve the text and explain the concepts better are welcome**. If anything in the text doesn’t match your opinion on a best practice, feel free to correct the meaning of the text. The result should be a document that you, as a technical writer, would be comfortable sharing with end-users.
-
-
-Construct your PR to teach the author:
-- Make atomic commits.
-- Write your commit messages to show your rationale for edits.
-- Please construct your commits, commit messages, and PR description as you would for an actual PR as if you were collaborating with a team.
-- It is best to edit the files on your local machine and push with the `git` command or a desktop Git application rather than editing directly on the GitHub.com website.
-
-Edit the text so that it is easy to read:
-- Correct errors.
-- Put the text in active voice and present tense.
-- Address the reader as you, not we.
-- Phrase statements as positive rather than negative.
-- Make the language simple and plain. 
-- Avoid euphemisms.
-- Structure the text so it has a logical flow. 
-
-Once you're finished with your edits, send the PR link to the HashiCorp recruiter.
-
-**NOTE**: DO NOT FORK THE PROJECT. MAKE A COPY OF ALL FILES, CREATE YOUR OWN FRESH REPOSITORY AND SUBMIT A PULL REQUEST TOWARDS YOUR OWN PROJECT. DO NOT MERGE THE PULL REQUEST.
-
----
-
-OVERALL QUESTIONS
-2. 
-3. 
-
-## Content
--->
 # Managing code via the command line
 Git offers you many ways to manage your code both locally and remotely. Create branches to separate updates from production code, create patches, test ideas, and merge your changes into the codebase. The command line makes it easy to download, review, modify, and push changes between your local machine and a remote repository.
 
@@ -59,7 +18,7 @@ The `git fetch` command does not update your local branch.
 To learn more about `git fetch`, review [Git's `git fetch` documentation](https://git-scm.com/docs/git-fetch).
 
 ### Retrieving changes and merging them to your local repository (`git pull`)
-The `git pull` command fetches changes from a remote repository, then applies those changes to your local repository so that you work from the latest copy. The `git pull` command serves as the basis for which code comparisons are made before you push or merge local changes to a branch or repository.
+The `git pull` command fetches changes from a remote repository, then applies those changes to your local repository so that you work from the latest copy. Git can compare that version of your assets to any updates you make, making it easier for git to know what has changed before pushing or merging changes to the repository.
 
 You must run `git pull` often to ensure that your local assets match the remote repository.
 
